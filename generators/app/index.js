@@ -94,8 +94,8 @@ module.exports = generators.Base.extend({
   },
 
   default: function() {
-    this.composeWith('cf:git');
-    this.composeWith('cf:npm', {
+    this.composeWith('cf-module:git');
+    this.composeWith('cf-module:npm', {
       options: {
         name: this.props.name,
         description: this.props.description,
@@ -104,22 +104,22 @@ module.exports = generators.Base.extend({
         authorEmail: this.props.authorEmail
       }
     });
-    this.composeWith('cf:readme', {
+    this.composeWith('cf-module:readme', {
       options: {
         name: this.props.name,
         description: this.props.description
       }
     });
-    this.composeWith('cf:license');
+    this.composeWith('cf-module:license');
 
-    this.composeWith('cf:src');
-    this.composeWith('cf:test');
+    this.composeWith('cf-module:src');
+    this.composeWith('cf-module:test');
 
-    this.composeWith('cf:eslint');
-    this.composeWith('cf:jsfmt');
-    this.composeWith('cf:babel');
-    this.composeWith('cf:react');
-    this.composeWith('cf:karma');
+    this.composeWith('cf-module:eslint');
+    this.composeWith('cf-module:jsfmt');
+    this.composeWith('cf-module:babel');
+    this.composeWith('cf-module:react');
+    this.composeWith('cf-module:karma');
   },
 
   installing: function() {
