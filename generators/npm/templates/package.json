@@ -1,0 +1,11 @@
+{
+  "name": "<%- name %>",
+  "description": "<%- description %>",
+  "version": "<%- version %>",
+  "main": "lib/index.js",
+  "scripts": {},
+  "author": "<%- authorName %> <<%- authorEmail %>>",
+  "license": "BSD-3-Clause",
+  "dependencies": {},
+  "devDependencies": {}
+}
