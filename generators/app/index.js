@@ -21,6 +21,13 @@ module.exports = generators.Base.extend({
       required: false,
       desc: 'Description of module'
     });
+
+    this.option('react', {
+      type: String,
+      required: false,
+      default: false,
+      desc: 'Should use React'
+    });
   },
 
   initializing: function() {
@@ -118,8 +125,11 @@ module.exports = generators.Base.extend({
     this.composeWith('cf-module:eslint');
     this.composeWith('cf-module:jsfmt');
     this.composeWith('cf-module:babel');
-    this.composeWith('cf-module:react');
     this.composeWith('cf-module:karma');
+
+    if (this.options.react) {
+      this.composeWith('cf-module:react');
+    }
   },
 
   installing: function() {
