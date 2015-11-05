@@ -11,7 +11,8 @@ var BABEL_DEV_DEPENDENCIES = {
 };
 
 var NPM_SCRIPTS = {
-  'build': 'babel src -d lib'
+  'build': 'babel src -d lib',
+  'prepublish': 'npm run build'
 };
 
 module.exports = generators.Base.extend({

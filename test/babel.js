@@ -20,5 +20,6 @@ describe('babel', function() {
     assert.fileContent('package.json', '"babel-core":');
     assert.fileContent('package.json', '"babel-cli":');
     assert.fileContent('package.json', '"build": "babel');
+    assert.fileContent('package.json', '"prepublish": "npm run build');
   });
 });
