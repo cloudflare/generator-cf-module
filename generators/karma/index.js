@@ -20,6 +20,8 @@ var KARMA_DEV_DEPENDENCIES = {
 
   'karma-sauce-launcher': '^0.3.0',
 
+  'mocha': '^2.3.3',
+
   'minimist': '^1.2.0',
   'defined': '^1.0.0'
 };
