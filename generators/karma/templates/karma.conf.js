@@ -61,7 +61,7 @@ module.exports = function(config) {
         served: false
       },
       {
-        pattern: 'tests/**/*.js',
+        pattern: 'test/**/*.js',
         watched: true,
         included: true,
         served: true
@@ -69,7 +69,7 @@ module.exports = function(config) {
     ],
 
     preprocessors: {
-      'tests/**/*.js': ['browserify']
+      'test/**/*.js': ['browserify']
     },
 
     // Overridable with a comma-separated list with `--reporters`
