@@ -13,4 +13,9 @@ describe('test', function() {
   it('should generate the test/index.js', function() {
     assert.file('test/index.js');
   });
+
+  it('should update package.json', function() {
+    assert.file('package.json');
+    assert.fileContent('package.json', '"mocha":');
+  });
 });
