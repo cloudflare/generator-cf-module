@@ -7,7 +7,7 @@ var BABEL_DEV_DEPENDENCIES = {
   'babel-core': '^6.0.20',
   'babel-cli': '^6.1.1',
   'babelify': '^7.2.0',
-  'babel-preset-cf': '^1.0.1'
+  'babel-preset-cf': '^1.1.0'
 };
 
 var NPM_SCRIPTS = {
