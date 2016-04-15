@@ -5,7 +5,7 @@ var extendObject = require('../../utils/extend-object');
 
 var ESLINT_DEV_DEPENDENCIES = {
   'eslint': '^1.8.0',
-  'eslint-plugin-cflint': '^1.2.0',
+  'eslint-plugin-cflint': '^1.0.0',
   'babel-eslint': '^6.0.2'
 };
 
