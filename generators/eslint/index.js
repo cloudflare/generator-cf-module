@@ -4,11 +4,13 @@ var generators = require('yeoman-generator');
 var extendObject = require('../../utils/extend-object');
 
 var ESLINT_DEV_DEPENDENCIES = {
-  'eslint': '^1.8.0'
+  'eslint': '^1.8.0',
+  'eslint-plugin-cflint': '^1.2.0',
+  'babel-eslint': '^6.0.2'
 };
 
 var NPM_SCRIPTS = {
-  'lint': 'eslint *.js src/ test/'
+  'lint': 'eslint src/ test/'
 };
 
 module.exports = generators.Base.extend({
